@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#" onclick="showPage('home')"><span>FATHIMA SHARAF</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#" onclick="showPage('home')" class="active" id="nav-home">Home</a></li>
+    <li><a href="#" onclick="showPage('blog')" id="nav-blog">Blog</a></li>
+    <li><a href="#" onclick="showPage('contact')" id="nav-contact">Contact</a></li>
+  </ul>
+  
+  <button class="hamburger" id="hamburger" aria-label="Toggle navigation" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-overlay" id="navOverlay" onclick="closeMenu()"></div>
+
+<!-- ══════════════ HOME ══════════════ -->
+<div class="page active" id="page-home">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm <em> Sharaf</em></h1>
+      <p class="hero-bio">Undergraduate in BSc (Hons) <br>Information Technology and Management.</p>
+      <div class="hero-btns">
+        <a class="btn btn-primary" href="#" onclick="showPage('contact')">Get in Touch</a>
+        <a class="btn btn-outline" href="#" onclick="showPage('blog')">Read Blog</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="profile-card">
+        <div class="profile-img-wrap">
+          <div class="profile-placeholder">
+            <div><img src="profile.jpeg" class="profile-avatar-icon"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- About Strip -->
+  <section class="about-strip">
+    <div class="about-text">
+      <h2><em>About Me</em></h2>
+      <p>I am a passionate and motivated undergraduate with a strong interest in web development and UI/UX design. I enjoy transforming ideas into responsive, user-friendly digital solutions.
+I have hands-on experience with HTML, CSS, JavaScript, PHP, and Python, and I continuously improve my skills by exploring modern technologies.
+Additionally, I have completed first-level web design training at the University of Moratuwa and a Web Application Development program offered by the Ministry of Education.
+My goal is to grow into a skilled software engineer and a future UI/UX leader in the tech industry.</p>
+      <div class="about-badge">
+  🎓 Completed Web Design Level 1 – University of Moratuwa
+      </div>
+      <div class="about-badge">
+  🎓 Completed Web Application Development – Ministry of Education
+      </div> <br><br>
+        <img src="web 1.png" alt="UOM Certificate"  width="100%" height="100%">
+    </div>
+       <div class="certificate-container">
+         <img src="web 2.jpeg" alt="Web Application Certificate" >
+</div>
+  </section>
+</div>
+
+<!-- ══════════════ BLOG ══════════════ -->
+<div class="page" id="page-blog">
+  <div class="blog-hero">
+    <div class="section-tag">My Writing</div>
+    <h1>The <em>Blog</em></h1>
+    <p>I wrote about animation in multimedia and how it enhances user engagement, simplifies complex information, and improves digital experiences.</p>
+  </div>
+
+  <div class="blog-grid">
+
+    <!-- Featured Article -->
+    <div class="blog-card">
+      <div class="blog-thumb">
+        <div class="blog-thumb-text">Animation in<br>Multimedia</div>
+        <div class="blog-thumb-icon">✦</div>
+      </div>
+      <div class="blog-body">
+        <div class="blog-meta">
+        </div>
+        <h3>The Magic of Movement: Why Animation is the Heartbeat of Modern Multimedia</h3>
+        <p>Animation is a part of our digital world today. It makes things come alive. When you watch a movie play a video game or use a website or app on your phone animation helps tell a story.</p>
+        <a class="blog-link" href="https://medium.com/@fathimasharaf2005/the-magic-of-movement-why-animation-is-the-heartbeat-of-modern-multimedia-87912c96ab4d" target="_blank" rel="noopener">
+          Read on Medium <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Placeholder Article 2 -->
+    <div class="blog-card">
+      <div class="blog-thumb" style="background: linear-gradient(135deg, #130d24 0%, #190f41 60%, #150e3c 100%);">
+        <div class="blog-thumb-text">CSS Grid<br>Deep Dive</div>
+        <div class="blog-thumb-icon">⊞</div>
+      </div>
+      <div class="blog-body">
+         <div class="blog-meta">
+        </div>
+        <h3>Mastering CSS Grid for Complex Layouts</h3>
+        <p>How I went from fighting with floats to loving CSS Grid — a practical walkthrough with real examples from my own projects.</p>
+        <a class="blog-link" href="https://medium.com/search?q=css+grid+layouts" target="_blank" rel="noopener">
+          Read on Medium <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════ CONTACT ══════════════ -->
+<div class="page" id="page-contact">
+  <div class="contact-wrap">
+
+    <div class="contact-info">
+      <div class="section-tag">Say Hello</div>
+      <h1>Let's <em>Connect</em></h1>
+      <p>Have a project idea, a question, or just want to chat about design and code? I'd love to hear from you.</p>
+
+      <div class="contact-detail">
+        <div class="contact-icon">📧</div>
+        <div class="contact-detail-text">
+          <small>Email</small>
+          <span>fathimasharaf2005@gmail.com</span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon">📞</div>
+        <div class="contact-detail-text">
+          <small>Phone</small>
+          <span>0758386356</span>
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <div class="contact-icon">🌍</div>
+        <div class="contact-detail-text">
+          <small>Location</small>
+          <span>Sri Lanka</span>
+        </div>
+      </div>
+    
+    </div>
+
+    <div class="contact-form-wrap">
+      <form id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="field" id="field-name">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your full name" />
+            <span class="field-error">Please enter your name.</span>
+          </div>
+          <div class="field" id="field-email">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="you@example.com" />
+            <span class="field-error">Please enter a valid email.</span>
+          </div>
+        </div>
+
+        <div class="field" id="field-subject">
+          <label for="subject">Subject</label>
+          <select id="subject">
+            <option value="">Select a subject…</option>
+            <option value="collaboration">Project Collaboration</option>
+            <option value="feedback">Blog Feedback</option>
+            <option value="opportunity">Opportunity / Internship</option>
+            <option value="other">Other</option>
+          </select>
+          <span class="field-error">Please select a subject.</span>
+        </div>
+
+        <div class="field" id="field-message">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Write your message here…"></textarea>
+          <span class="field-error">Please enter a message (at least 10 characters).</span>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message ✦</button>
+      </form>
+
+      <div class="success-msg" id="successMsg">
+        <div class="success-icon">✅</div>
+        <h3>Message Sent!</h3>
+        <p>Thanks for reaching out. I'll get back to you within 24–48 hours.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- FOOTER -->
+<footer> <center>
+  <div class="footer-brand"><b>Fathima Sharaf</b><span>.</span></div>
+  <div class="footer-brand">BSc (Hons) Information Technology and Management<span>.</span></div>
+  <div class="footer-brand"><span>University of Moratuwa</span></div><br>
+
+  <div class="footer-copy">© Fathima Sharaf. All rights reserved.</div>
+</center>
+</footer>
+
+
+<script>
+  /* ─── PAGE ROUTING ─── */
+  function showPage(name) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById('page-' + name).classList.add('active');
+
+    document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+    const navEl = document.getElementById('nav-' + name);
+    if (navEl) navEl.classList.add('active');
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    closeMenu();
+    return false;
+  }
+
+  /* ─── HAMBURGER ─── */
+  function toggleMenu() {
+    const links = document.getElementById('navLinks');
+    const btn = document.getElementById('hamburger');
+    const overlay = document.getElementById('navOverlay');
+    links.classList.toggle('open');
+    btn.classList.toggle('open');
+    overlay.classList.toggle('open');
+  }
+
+  function closeMenu() {
+    document.getElementById('navLinks').classList.remove('open');
+    document.getElementById('hamburger').classList.remove('open');
+    document.getElementById('navOverlay').classList.remove('open');
+  }
+
+  /* ─── FORM VALIDATION ─── */
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    let valid = true;
+
+    const name = document.getElementById('name');
+    const email = document.getElementById('email');
+    const subject = document.getElementById('subject');
+    const message = document.getElementById('message');
+
+    // Name
+    const nameField = document.getElementById('field-name');
+    if (name.value.trim().length < 2) {
+      nameField.classList.add('error'); valid = false;
+    } else { nameField.classList.remove('error'); }
+
+    // Email
+    const emailField = document.getElementById('field-email');
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email.value.trim())) {
+      emailField.classList.add('error'); valid = false;
+    } else { emailField.classList.remove('error'); }
+
+    // Subject
+    const subjectField = document.getElementById('field-subject');
+    if (!subject.value) {
+      subjectField.classList.add('error'); valid = false;
+    } else { subjectField.classList.remove('error'); }
+
+    // Message
+    const messageField = document.getElementById('field-message');
+    if (message.value.trim().length < 10) {
+      messageField.classList.add('error'); valid = false;
+    } else { messageField.classList.remove('error'); }
+
+    if (valid) {
+      document.getElementById('contactForm').style.display = 'none';
+      document.getElementById('successMsg').style.display = 'block';
+    }
+  });
+
+  // Clear errors on input
+  ['name','email','subject','message'].forEach(id => {
+    const el = document.getElementById(id);
+    const field = document.getElementById('field-' + id);
+    el.addEventListener('input', () => field.classList.remove('error'));
+    el.addEventListener('change', () => field.classList.remove('error'));
+  });
+</script>
+</body>
+</html>
